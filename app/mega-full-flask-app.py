@@ -2,7 +2,6 @@ from flask import Flask, request, send_file
 from pptx import Presentation
 import tempfile
 import os
-import json
 from openai import OpenAI
 
 app = Flask(__name__)
