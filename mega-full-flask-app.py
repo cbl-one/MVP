@@ -62,7 +62,7 @@ def upload_file():
             # Create a slide for each content section
             for content in slide_contents:
                 slide = new_presentation.slides.add_slide(slide_layout)
-                slide.shapes.title.text = content
+                slide.shapes.placeholders[1].text = content
 
             # Save and send file
             tmp_file = tempfile.NamedTemporaryFile(suffix='.pptx', delete=False)
